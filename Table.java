@@ -22,4 +22,11 @@ public class Table {
         this.tabletop = tabletop;
         this.legs = legs;
     }
+    public String toStringTable(){
+        return "Table: " + name + "\n" +
+                "Appointment: " + appointment + "\n" +
+                "Height of table: " + height + "\n" +
+                "Tabletop: " + tabletop.toStringTabletopRectangle() + "\n" +
+                "Legs: " + legs.toStringLegsRound();
+    }
 }

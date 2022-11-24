@@ -15,5 +15,7 @@ public class Main {
         Table table1 = new Table("Table1", "For work", "PinskWood",
                 false, 0.9, 15.0, 6,
                 tabletop1, legs1);
+
+        System.out.println(table1.toStringTable());
     }
 }
