@@ -11,6 +11,7 @@ public class Computer {
         this.mouse = mouse;
         this.keyboard = keyboard;
         this.loudspeakers = loudspeakers;
+        Room.count += 5;
     }
 
 }

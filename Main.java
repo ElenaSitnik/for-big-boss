@@ -46,8 +46,8 @@ public class Main {
         Shelf shelf2 = new Shelf("Black", "Wood", 75, 20, 12, 1.5);
         Shelf shelf3 = new Shelf("Black", "Wood", 100, 20, 12, 2.0);
 
-        TV tv = new TV("Samsung", "UE55NU7450U", "Black and grey", 55, 20,
-                123, 714, 6);
+        TV tv = new TV("Samsung", "UE55NU7450U", "Black and grey", PanelType.VA,55,
+                20, 123, 714, 6);
 
         SystemUnit systemUnit = new SystemUnit("Zalman", "Black", 55, 25, 48,
                 10, 16, 800, "Intel", true, "Blue");
@@ -61,8 +61,8 @@ public class Main {
         Mouse mouse = new Mouse("AULA", "SI-928", "Black", false, true,
                 "Blue");
 
-        Monitor monitor = new Monitor("LG", "24MK600M", "Black and grey", 24,
-                54.0, 32.5, 45, 3.2);
+        Monitor monitor = new Monitor("LG", "24MK600M", "Black and grey", PanelType.IPS,
+                55, 54.0, 32.5, 45, 3.2);
 
         Loudspeakers loudspeakers = new Loudspeakers("Sven", "Q.C.1", "Black", 2,
                 12, 11, 18,0.8, false, "No");
@@ -75,6 +75,27 @@ public class Main {
 
         Book book2 = new Book("Java Полное руководство", "Г. Шилдт", "Диалектика",
                 2018, 1488, 24, 17.2, 68, 2.1);
+
+        Printer printer = new Printer("Samsung", "Xpress M2020W", "Black and grey",
+                PrinterType.LASER, 4.2, 33, 21, 17.5);
+
+        Room room = new Room("Guestroom");
+        room.addBook(book1);
+        room.addBook(book2);
+        room.addCarpet(carpet);
+        room.addComputer(computer);
+        room.addKeyboard(keyboard2);
+        room.addPrinter(printer);
+        room.addShelf(shelf1);
+        room.addShelf(shelf2);
+        room.addShelf(shelf3);
+        room.addSofa(sofa);
+        room.addTable(table1);
+        room.addTable(table2);
+        room.addTable(table3);
+        room.addTV(tv);
+
+        System.out.println(room.getCount());
 
     }
 }
