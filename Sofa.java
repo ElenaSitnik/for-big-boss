@@ -10,7 +10,7 @@ public class Sofa {
     private int widthSleepingPlace; //mm
     private double weight; //kg
     private int seatsNumber;
-    private int floorDistance; //cm
+    private double floorDistance; //cm
     private boolean sofaTransformer;
     private boolean storageSpace;
     private String legsForm;
@@ -20,7 +20,7 @@ public class Sofa {
 
     public Sofa(String name, String colour, String material, String form, int length,
                 int widthMin, int widthMax, int height, int widthSleepingPlace, double weight,
-                int seatsNumber, int floorDistance, boolean sofaTransformer,
+                int seatsNumber, double floorDistance, boolean sofaTransformer,
                 boolean storageSpace, String legsForm, String legsMaterial, int legsCount,
                 String legsColour) {
         this.name = name;

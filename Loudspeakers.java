@@ -1,29 +1,27 @@
-public class SystemUnit {
+public class Loudspeakers {
     private String name;
+    private String model;
     private String colour;
+    private int count;
     private int length; //cm
     private int width; //cm
     private int height; //cm
-    private double weight; //kg
-    private int RAM; //GigaBite
-    private int HDD; //GigaBite
-    private String CPUName;
+    private double weight;
     private boolean backlight;
     private String backlightColour;
 
-    public SystemUnit(String name, String colour, int length, int width, int height,
-                      double weight, int RAM, int HDD, String CPUName,
-                      boolean backlight, String backlightColour) {
+    public Loudspeakers(String name, String model, String colour, int count, int length, int width,
+                        int height, double weight, boolean backlight, String backlightColour) {
         this.name = name;
+        this.model = model;
         this.colour = colour;
+        this.count = count;
         this.length = length;
         this.width = width;
         this.height = height;
         this.weight = weight;
-        this.RAM = RAM;
-        this.HDD = HDD;
-        this.CPUName = CPUName;
         this.backlight = backlight;
         this.backlightColour = backlightColour;
     }
+
 }
